@@ -1,34 +1,178 @@
 <html>
   <head>
-    <title>Latih Tubi</title>
-    <style>
-      .header {
-        width: 20%;
-        max-width: 200px;
-        float: left;
-        padding-top: 30px;
-        padding-left: 20px;
+    <title>Employee Listing</title>
+  </head>
+  <style>
+    .header {
+      overflow: hidden;
+      width: 100%;
+      background-color: rgb(222, 184, 135);
+      }
+      .header_logo {
+      padding-top: 10px;
+      }
+      .header_logo img {
+      width: 20%;
+      max-width: 200px;
+      float: left;
+      padding-left: 15px;
+      padding-top: 10px;
+      padding-bottom: 20px;
       }
       .header_greeting {
-        font-size: 10mm;
-        font-weight: bold;
-        padding-top: 30px;
-        padding-left: 80px;
-        float: left;
+      float: left;
+      padding-top: 20px;
+      padding-bottom: 20px;
+      padding-left: 25px;
+      font-size: 10mm;
       }
-      .logo {
-        width: 20%;
-        padding-top: 50px;
-        padding-right: 30px;
+     .menu {
+      background-color: coral;
+      color: white;
+      margin: auto;
       }
-    </style>
-  </head>
-  
+      .menu ul {
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: coral;
+      color: white;
+      }
+      .menu li {
+      list-style-type: none;
+      float: left;
+      color: white;
+      }
+      .menu a {
+      text-decoration: none;
+      display: block;
+      padding: 20px;
+      color: white;
+      }
+      .menu li:hover {
+      background-color: antiquewhite;
+      }
+      .menu a:hover {
+      color: black;
+      }
+      .kandungan {
+      margin: auto;
+      text-align: center;
+      }
+      .orang {
+      margin: auto;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      text-align: center;
+      border: solid;
+      margin-top: 20px;
+      width: 50%;
+      }
+      th{
+      border-style: solid;
+      border-width: 1px;
+      }
+      td {
+      border-style: solid;
+      border-width: 1px;
+      }
+     .kaki {
+      border: solid;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      margin-top: 20px;
+      background-color: rgb(210,180,140)
+      }
+
+  </style>
+
   <body>
-    <!--header-->
+
+    <!--Header-->
     <div class="header">
-      <img src="images/logo.jpg"></div>
-    <div class="header_greeting">Employee Listing</div>
+      <div class="header_logo"><img src="image/logo"></div>
+      <div class="header_greeting">
+        Employee Listing
+      </div>
+    </div>
+
+    <!--Menu-->
+    <div class="menu">
+      <ul>
+        <li><a href="index.html">Index</a></li>
+        <li><a href="list.html">List</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </div>
+
+
+    <!--Content-->
+    <div class="kandungan">
+      <h1>Index</h1>
+      <input type="text" class="form">
+      <input type="submit" value="Search" class="cari">
+      <input type="reset" class="padam">
+
+      <table class="orang">
+        <tr>
+          <th>Bil.</th>
+          <th>Nama</th>
+          <th>Jantina</th>
+          <th>Jabatan</th>
+          <th>Gaji</th>
+        </tr>
+
+        <tr>
+          <td>1</td>
+          <td>Muhammad Abu</td>
+          <td>Lelaki</td>
+          <td>Perniagaan</td>
+          <td>RM1500</td>
+        </tr>
+
+        <tr>
+          <td>2</td>
+          <td>Muhammad Ali</td>
+          <td>Lelaki</td>
+          <td>Komputer</td>
+          <td>RM1701</td>
+        </tr>
+
+        <tr>
+          <td>3</td>
+          <td>Nurul Timah</td>
+          <td>Perempuan</td>
+          <td>Perniagaan</td>
+          <td>RM2002</td>
+        </tr>
+
+        <tr>
+          <td>4</td>
+          <td>Siti Semah</td>
+          <td>Perempuan</td>
+          <td>Perniagaan</td>
+          <td>RM1500</td>
+        </tr>
+
+        <tr>
+          <td>5</td>
+          <td>Nur Zila</td>
+          <td>Perempuan</td>
+          <td>Komputer</td>
+          <td>RM1701</td>
+        </tr>
+
+      </table>
+    </div>
+
+    <!--Footer-->
+    <div class="kaki">
+    Copyright &copy; Syarikat ABC,2021
+    </div>
+
   </body>
-  
+
 </html>
